@@ -55,6 +55,7 @@ public class IMUBTHelp : MonoBehaviour
         US2 = new Vector3(-81.57f, 91.05f, -117.14f);
         US3 = new Vector3(-82.24f, 91.68f, -115.87f);
         US4 = new Vector3(-83.12f, 92.5f, -114.21f);
+        //Linea de codigo de prueba para referencia
         CateterGuia.transform.rotation = Quaternion.Euler(roll * factor, yaw * factor, pitch * factor);
     }
     void OnMessageReceived(BluetoothHelper helper)
@@ -174,3 +175,4 @@ public class IMUBTHelp : MonoBehaviour
         payloada[3] = null;
     }
 }
+
